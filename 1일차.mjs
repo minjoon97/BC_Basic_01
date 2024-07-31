@@ -1,7 +1,4 @@
 function solution(telno) {
-    //기존코드
-    //const tel = telno; 
-    //수정코드
     const tel = telno.replace(/[-]/ig,"");
     const failure = ["전국", "X"];
     const map = {
@@ -45,16 +42,3 @@ function solution(telno) {
 
     return failure;
 }
-
-console.log(solution("010-123-1234"));
-console.log(solution("010-2234-1234"));
-console.log(solution("02-1234-1234"));
-console.log(solution("0212341111"));
-console.log(solution("0311237890"));
-console.log(solution("061-012-7890"));
-console.log(solution("015-0157899"));
-console.log(solution("042-2123-7890"));
-console.log(solution("010-2223-1234"));
-console.log(solution("001123456789"));
-console.log(solution("0011234567"));
-console.log(solution("0011234567899999"));
