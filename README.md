@@ -2,6 +2,7 @@
 ## 전화번호부 등록하기
 
 <br/>
+<br/>
 
 ### 전화번호 입력받기
 
@@ -14,9 +15,9 @@ Ex) 010-7388-8752
 ```
 const tel = telno.replace(/[-]/ig,"");
 ```
-정규표현식을 이요하여 telno의 -를 모두 제거.
+정규표현식을 이용하여 telno의 -를 모두 제거.
 <br/>
-
+<br/>
 
 ### 전화번호 필터링하기
 ```
@@ -34,7 +35,9 @@ const map = {
     const ext = tel.substring(tel.length - 4);
 ```
 앞 세자리를 top으로, 뒤 네자리를 ext으로 선언
+
 <br/>
+
 ```
 if(top === '001' || top === '002') {
         if (tel.length<11 || tel.length>15) return ["국제전화", "X"];
